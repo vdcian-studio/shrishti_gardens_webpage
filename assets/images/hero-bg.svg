@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E221D"/>
+      <stop offset="45%" stop-color="#1A4338"/>
+      <stop offset="80%" stop-color="#2D5A4D"/>
+      <stop offset="100%" stop-color="#122A23"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F1E8" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#F5F1E8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#102B25" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="goldSun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DFCA9B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C5A66A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <!-- Distant Mountain Ridges -->
+  <path d="M0,620 Q350,480 720,560 T1440,510 Q1680,480 1920,540 L1920,1080 L0,1080 Z" fill="#0E2620" opacity="0.9"/>
+  <!-- Mid Mountain Ridges -->
+  <path d="M0,720 Q480,590 960,680 T1920,630 L1920,1080 L0,1080 Z" fill="#13352B"/>
+  <!-- Morning Mountain Sun Flare -->
+  <circle cx="1320" cy="420" r="280" fill="url(#goldSun)"/>
+  <!-- Near Forest Canopy & Pine Silhouettes -->
+  <path d="M0,840 Q320,740 760,820 T1500,770 Q1750,730 1920,790 L1920,1080 L0,1080 Z" fill="#0B1C17"/>
+  <rect y="500" width="1920" height="380" fill="url(#mist)"/>
+  <!-- Atmosphere Vignette -->
+  <radialGradient id="vig" cx="50%" cy="50%" r="50%">
+    <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#05120F" stop-opacity="0.7"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vig)"/>
+</svg>

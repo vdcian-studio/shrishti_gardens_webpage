@@ -1,0 +1,37 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102B25"/>
+      <stop offset="60%" stop-color="#183C32"/>
+      <stop offset="100%" stop-color="#0E1F1A"/>
+    </linearGradient>
+    <pattern id="diag" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M0 60 L60 0 M-10 10 L10 -10 M50 70 L70 50" stroke="#C5A66A" stroke-width="0.5" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#diag)"/>
+  
+  <!-- Subtle Architectural/Mountain Contours -->
+  <path d="M 0,550 C 300,420 500,580 800,490 C 1000,420 1100,480 1200,450 L 1200,800 L 0,800 Z" fill="#0C201B" opacity="0.6"/>
+  <path d="M 0,640 C 250,560 600,680 900,600 C 1080,550 1150,610 1200,580 L 1200,800 L 0,800 Z" fill="#081613" opacity="0.7"/>
+
+  <!-- Center Decorative Frame -->
+  <rect x="80" y="80" width="1040" height="640" rx="4" stroke="#C5A66A" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="6 6"/>
+  <rect x="90" y="90" width="1020" height="620" rx="2" stroke="#C5A66A" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <!-- Logo Mark Motif -->
+  <g transform="translate(600, 360)">
+    <circle cx="0" cy="0" r="48" stroke="#C5A66A" stroke-width="1" stroke-opacity="0.4"/>
+    <circle cx="0" cy="0" r="42" fill="#102B25" stroke="#C5A66A" stroke-width="1.2"/>
+    <path d="M 0,-20 L 16,10 L -16,10 Z" fill="none" stroke="#C5A66A" stroke-width="1.4"/>
+    <circle cx="0" cy="-6" r="3" fill="#C5A66A"/>
+    <path d="M 0,22 C 0,16 8,12 14,12 C 9,16 5,19 0,22 Z" fill="#C5A66A"/>
+    <path d="M 0,22 C 0,16 -8,12 -14,12 C -9,16 -5,19 0,22 Z" fill="#C5A66A"/>
+  </g>
+
+  <!-- Editorial Typography -->
+  <text x="600" y="460" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-weight="500" letter-spacing="4" fill="#F5F1E8" text-anchor="middle">CATEGORY III · GARDEN VILLA</text>
+  <text x="600" y="495" font-family="'Manrope', sans-serif" font-size="11" font-weight="400" letter-spacing="5" fill="#C5A66A" text-anchor="middle">SHRISHTI GARDENS · LUXURY PROTOTYPE</text>
+  <text x="600" y="525" font-family="'Manrope', sans-serif" font-size="9" font-weight="300" letter-spacing="2" fill="#A3B8B0" text-anchor="middle">[ Official High-Resolution Photography Placement ]</text>
+</svg>

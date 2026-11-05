@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#102B25" />
+      <stop offset="50%" stop-color="#14342D" />
+      <stop offset="100%" stop-color="#0B1E19" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFCA9B" />
+      <stop offset="100%" stop-color="#C5A66A" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1D4338" stroke-width="0.5" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Dark Forest Map Surface -->
+  <rect width="900" height="500" fill="url(#mapBg)"/>
+  <rect width="900" height="500" fill="url(#grid)"/>
+
+  <!-- Mountain Topographic Elevation Contours -->
+  <g stroke="#C5A66A" stroke-opacity="0.15" fill="none" stroke-width="1.2">
+    <path d="M-50,220 C120,180 200,320 380,260 C520,210 680,310 950,240" />
+    <path d="M-50,180 C140,140 240,280 410,210 C560,160 710,270 950,190" />
+    <path d="M-50,140 C160,90 270,230 450,170 C590,120 740,220 950,140" stroke-opacity="0.22" />
+    <path d="M-50,260 C100,220 180,360 350,300 C490,250 650,350 950,290" />
+    <path d="M-50,310 C80,270 150,410 320,350 C460,300 620,400 950,340" stroke-opacity="0.1" />
+    
+    <!-- Concentric Ridge Rings around Shrishti Sanctuary (Center 480, 230) -->
+    <ellipse cx="480" cy="230" rx="220" ry="110" stroke-opacity="0.18" stroke-dasharray="4 4"/>
+    <ellipse cx="480" cy="230" rx="160" ry="80" stroke-opacity="0.22"/>
+    <ellipse cx="480" cy="230" rx="100" ry="50" stroke-opacity="0.28"/>
+    <ellipse cx="480" cy="230" rx="50" ry="25" stroke-opacity="0.38"/>
+  </g>
+
+  <!-- Mountain Ridge Roads & Scenic Trails -->
+  <path d="M 80,480 C 140,400 220,360 290,380 C 360,400 420,310 460,260 L 480,230" 
+        stroke="#A3B8B0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 0" stroke-opacity="0.7"/>
+  <path d="M 480,230 C 510,180 580,160 660,180 C 740,200 800,140 880,100" 
+        stroke="#A3B8B0" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4" stroke-opacity="0.5"/>
+  <path d="M 480,230 C 440,180 380,150 320,130 C 260,110 200,120 140,90" 
+        stroke="#A3B8B0" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 3" stroke-opacity="0.4"/>
+
+  <!-- Scenic Landmarks Annotations -->
+  <g font-family="'Manrope', sans-serif" font-size="11" fill="#A3B8B0" letter-spacing="1.5">
+    <circle cx="290" cy="380" r="3" fill="#C5A66A" fill-opacity="0.7"/>
+    <text x="290" y="405" text-anchor="middle">GHAT SCENIC ROUTE</text>
+
+    <circle cx="660" cy="180" r="3" fill="#C5A66A" fill-opacity="0.7"/>
+    <text x="660" y="165" text-anchor="middle">PINE FOREST TRAILS</text>
+
+    <circle cx="210" cy="115" r="3" fill="#C5A66A" fill-opacity="0.7"/>
+    <text x="210" y="105" text-anchor="middle">VALLEY VIEWPOINT</text>
+
+    <circle cx="780" cy="340" r="3" fill="#C5A66A" fill-opacity="0.7"/>
+    <text x="780" y="360" text-anchor="middle">KODAI LAKE BASIN (8 KM)</text>
+  </g>
+
+  <!-- Shrishti Gardens Location Marker & Ripple Effect -->
+  <g transform="translate(480, 230)">
+    <!-- Expanding Pulse Rings -->
+    <circle cx="0" cy="0" r="42" stroke="#C5A66A" stroke-width="1" stroke-opacity="0.25">
+      <animate attributeName="r" values="20;50;20" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.4;0.05;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="28" stroke="#C5A66A" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="0" cy="0" r="16" fill="#102B25" stroke="#C5A66A" stroke-width="1.8"/>
+    
+    <!-- Pin Marker Icon -->
+    <path d="M 0,-28 C -7,-28 -12,-23 -12,-16 C -12,-7 0,0 0,0 C 0,0 12,-7 12,-16 C 12,-23 7,-28 0,-28 Z" 
+          fill="url(#goldGlow)" filter="drop-shadow(0px 4px 8px rgba(0,0,0,0.5))"/>
+    <circle cx="0" cy="-16" r="4" fill="#102B25"/>
+
+    <!-- Prominent Luxury Badge / Card -->
+    <g transform="translate(24, -48)">
+      <rect x="0" y="0" width="220" height="66" rx="4" fill="#0C1F1A" fill-opacity="0.95" stroke="#C5A66A" stroke-width="1"/>
+      <text x="16" y="24" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="#F5F1E8" letter-spacing="2">SHRISHTI GARDENS</text>
+      <text x="16" y="42" font-family="'Manrope', sans-serif" font-size="9" fill="#C5A66A" letter-spacing="1.5">SANCTUARY RETREAT</text>
+      <text x="16" y="55" font-family="'Manrope', sans-serif" font-size="8.5" fill="#A3B8B0" letter-spacing="1">ELEVATION 2,133M · KODAIKANAL</text>
+    </g>
+  </g>
+
+  <!-- Elevation Marker Compass -->
+  <g transform="translate(830, 70)" stroke="#C5A66A" stroke-width="0.8">
+    <circle cx="0" cy="0" r="24" fill="none" stroke-opacity="0.4"/>
+    <line x1="0" y1="-28" x2="0" y2="28" stroke-opacity="0.7"/>
+    <line x1="-28" y1="0" x2="28" y2="0" stroke-opacity="0.4"/>
+    <polygon points="0,-24 -4,-12 4,-12" fill="#C5A66A"/>
+    <text x="0" y="-32" font-family="'Manrope', sans-serif" font-size="9" font-weight="600" fill="#C5A66A" text-anchor="middle">N</text>
+  </g>
+</svg>
